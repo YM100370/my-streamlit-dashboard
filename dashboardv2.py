@@ -103,9 +103,8 @@ div[data-testid="stMetricLabel"] {
 """, unsafe_allow_html=True)
 
 
-# --- טעינת נתונים ---
-csv_path = r"C:\Users\Yehuda\marketing streamlit\archive\bakery_sales_revised.csv"
-
+# --- טעינת נתונים --- 
+csv_path = "bakery_sales_revised.csv"
 if not os.path.exists(csv_path):
     st.error(f"קובץ הנתונים לא נמצא בנתיב: `{csv_path}`. אנא ודא את הנתיב והרשאות.")
     st.stop()
